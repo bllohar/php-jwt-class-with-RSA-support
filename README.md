@@ -1,2 +1,2 @@
 # php-jwt-class-with-RSA-support
-PHP Implementation of Javascript web token with RSA  
+PHP Implementation of JSON Web token with RSA  
