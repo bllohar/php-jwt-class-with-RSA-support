@@ -1,7 +1,19 @@
 {
     "name": "bllohar/php-jwt-class-with-rsa-support",
+    "type": "library",
     "description": "PHP Implementation of JSON Web token with RSA.",
+    "keywords": ["JWT","JSON web token","PHP Web Token","PHP JWT","JWT token"],
+    "homepage": "https://github.com/bllohar/php-jwt-class-with-RSA-support",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "BL Lohar",
+            "email": "bheru.l@kwalityhost.com",
+            "homepage": "http://www.webyot.com/",
+            "role": "Developer"
+        }
+    ],
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=5.3.0"
     }
 }
