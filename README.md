@@ -21,7 +21,7 @@ Supported algos :
 # How to use with RSA public/private key
 
 ```php
-	include 'src/JWToken.php';
+include 'src/JWToken.php';
 ```
 
 ```php
