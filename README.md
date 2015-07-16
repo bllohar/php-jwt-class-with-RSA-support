@@ -29,7 +29,7 @@ Or
 ##### git clone https://github.com/bllohar/php-jwt-class-with-RSA-support.git
 
 ```php
-include 'src/JWToken.php';
+include 'php-jwt-class-with-RSA-support/src/JWToken.php';
 ```
 
 ```php
