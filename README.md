@@ -20,6 +20,12 @@ Supported algos :
 	
 # How to use with RSA public/private key
 
+With composer
+
+```shell
+composer require bllohar/php-jwt-class-with-rsa-support
+````
+
 ```php
 include 'src/JWToken.php';
 ```
