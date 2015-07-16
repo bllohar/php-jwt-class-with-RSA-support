@@ -1,0 +1,7 @@
+{
+    "name": "bllohar/php-jwt-class-with-RSA-support",
+    "description": "PHP Implementation of JSON Web token with RSA.",
+    "require": {
+        "php": ">=5.4.0",
+    }
+}
