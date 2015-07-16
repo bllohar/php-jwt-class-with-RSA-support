@@ -21,6 +21,10 @@ Supported algos :
 # How to use with RSA public/private key
 
 ```php
+	include 'src/JWToken.php';
+```
+
+```php
 $payload = array(
 		'username' => 'bllohar',
 		'userId'   => 1
@@ -31,11 +35,11 @@ $private_key = file_get_contents('keys/private_key.pem');
 $public_key = file_get_contents('keys/public_key.pem');
 
 // Generate token with Private key
-$token = JWT::encode($payload, $private_key,'RS256');
+$token = JWToken::encode($payload, $private_key,'RS256');
 
 // Verifying the token
 try{
-	$data = JWT::decode($token,$public_key,'RS256');
+	$data = JWToken::decode($token,$public_key,'RS256');
 
         var_dump($data);
 }catch(Exception $e){
@@ -54,11 +58,11 @@ $payload = array(
 $secret = "^&562!2wzJGH!222"; // your secret key [should store in ENV variable]
 
 // Generate token with secret
-$token = JWT::encode($payload, $secret,'HS512');
+$token = JWToken::encode($payload, $secret,'HS512');
 
 // Verifying the token
 try{
-	    $data = JWT::decode($token,$secret,'HS512');
+	    $data = JWToken::decode($token,$secret,'HS512');
         var_dump($data);
 }catch(Exception $e){
 	echo $e->getMessage();
